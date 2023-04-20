@@ -1,0 +1,42 @@
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.exe
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.deps.json
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.runtimeconfig.json
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.dll
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.pdb
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.csproj.AssemblyReference.cache
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\App.g.cs
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid_MarkupCompile.cache
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid_MarkupCompile.lref
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\MainWindow.baml
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.g.resources
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.AssemblyInfoInputs.cache
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.AssemblyInfo.cs
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.csproj.CoreCompileInputs.cache
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.dll
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\refint\WinformPropertyGrid.dll
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.pdb
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.genruntimeconfig.cache
+D:\OneDrive\6. wpf\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\ref\WinformPropertyGrid.dll
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.exe
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.deps.json
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.runtimeconfig.json
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.dll
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\bin\Debug\net6.0-windows\WinformPropertyGrid.pdb
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.csproj.AssemblyReference.cache
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\App.g.cs
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid_MarkupCompile.cache
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid_MarkupCompile.lref
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\MainWindow.baml
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.g.resources
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.AssemblyInfoInputs.cache
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.AssemblyInfo.cs
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.csproj.CoreCompileInputs.cache
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.dll
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\refint\WinformPropertyGrid.dll
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.pdb
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\WinformPropertyGrid.genruntimeconfig.cache
+D:\OneDrive\6.WPF\WinformPropertyGrid\WinformPropertyGrid\obj\Debug\net6.0-windows\ref\WinformPropertyGrid.dll
