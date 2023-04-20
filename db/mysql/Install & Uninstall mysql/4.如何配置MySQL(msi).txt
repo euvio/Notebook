@@ -1,0 +1,26 @@
+1. 开启服务才能连接和登录Mysql服务器
+
+2. 设置服务的启动方式是  自动启动，服务便会开机自启
+
+3. mysql的配置文件名称是my.ini，位置在ProgramData\Mysql\Mysql Server 8.x\my.ini或安装路径\bin\my.ini
+
+4. 服务的可执行文件的路径："C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe" --defaults-file="C:\ProgramData\MySQL\MySQL Server 8.0\my.ini" MySQL8025
+
+5. ProgramData\my.ini      设置字符集为utf8，文件编码格式改成ASNI, 重启服务生效
+
+
+      [mysql]
+      	default-character-set=utf8
+      [mysqld]
+      	port=3306
+      	basedir="C:/Program Files/MySQL/MySQL Server 8.0/"
+      	datadir=C:/ProgramData/MySQL/MySQL Server 8.0\Data
+      	character-set-server=utf8
+      	default_authentication_plugin=caching_sha2_password
+      	default-storage-engine=INNODB
+
+
+5. 设置bin为环境变量
+
+6. 验证是否成功安装
+   mysql.exe是客户端，mysql -P3306 -uroot -p    mysqld.exe是服务器

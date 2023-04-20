@@ -1,0 +1,5 @@
+D:\OneDrive\Notebook\EuvStudio.Nini\EuvStudio.Nini\obj\Debug\netstandard2.0\EuvStudio.Nini.csproj.AssemblyReference.cache
+D:\OneDrive\Notebook\EuvStudio.Nini\EuvStudio.Nini\obj\Debug\netstandard2.0\EuvStudio.Nini.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Notebook\EuvStudio.Nini\EuvStudio.Nini\obj\Debug\netstandard2.0\EuvStudio.Nini.AssemblyInfoInputs.cache
+D:\OneDrive\Notebook\EuvStudio.Nini\EuvStudio.Nini\obj\Debug\netstandard2.0\EuvStudio.Nini.AssemblyInfo.cs
+D:\OneDrive\Notebook\EuvStudio.Nini\EuvStudio.Nini\obj\Debug\netstandard2.0\EuvStudio.Nini.csproj.CoreCompileInputs.cache

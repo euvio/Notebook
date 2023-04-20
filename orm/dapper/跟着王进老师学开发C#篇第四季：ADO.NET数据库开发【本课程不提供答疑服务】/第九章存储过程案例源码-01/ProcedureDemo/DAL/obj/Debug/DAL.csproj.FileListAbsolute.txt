@@ -1,0 +1,9 @@
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\bin\Debug\DAL.dll
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\bin\Debug\DAL.pdb
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\bin\Debug\DBUtility.dll
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\bin\Debug\Models.dll
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\bin\Debug\DBUtility.pdb
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\bin\Debug\Models.pdb
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\obj\Debug\DAL.dll
+D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\DAL\obj\Debug\DAL.pdb

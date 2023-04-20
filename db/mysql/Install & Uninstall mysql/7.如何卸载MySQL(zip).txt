@@ -1,0 +1,7 @@
+﻿以管理员身份打开CMD
+
+1. 停止MySQL服务            // net stop mysql8025
+2. 删除MySQL服务            // sc delete mysql8025
+3. 删除磁盘上MySQL的安装包
+4. 删除MySQL的bin的环境变量（如果您配置了环境变量的话）
+5. 重启电脑（非必要，建议）

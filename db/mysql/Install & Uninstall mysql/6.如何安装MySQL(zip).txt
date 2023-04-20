@@ -1,0 +1,23 @@
+﻿1. 把解压后的安装包放到你想作为Mysql安装路径的目录
+2. 将my.ini放到与bin同级的文件夹下
+3. 修改my.ini ---> 【安装路径】，【Data路径】 --> 修改文件编码为ANSI-->保存
+
+以管理员身份打开cmd，依次运行以下命令：
+
+# 安装mysql。要记得保存生成的root初始密码
+mysqld --initialize --console
+
+# 将mysql安装成服务
+mysqld -install mysql8025
+
+# 停止服务
+net stop mysql8025
+
+# 启动服务
+net start mysql8025
+
+# 使用初始密码登录
+mysql -uroot -p
+
+# 修改初始密码为123456
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';

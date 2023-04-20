@@ -1,0 +1,5 @@
+D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Models\bin\Debug\Models.dll
+D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Models\bin\Debug\Models.pdb
+D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Models\obj\Debug\Models.dll
+D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Models\obj\Debug\Models.pdb

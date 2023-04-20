@@ -1,0 +1,5 @@
+1. 以管理员身份打开cmd，停止并删除mysql服务  // net stop mysql8025      sc delete mysql8025
+2. 控制面板---卸载---mysql server
+3. 删除残留的文件夹（安装文件夹，ProgramData）
+4. 删除环境变量（如果您配置了环境变量）
+5. 重启电脑

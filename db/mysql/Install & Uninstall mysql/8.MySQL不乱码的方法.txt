@@ -1,0 +1,35 @@
+
++--------------------------+--------------------------------+
+| Variable_name            | Value                          |
++--------------------------+--------------------------------+
+| character_set_client     | utf8mb4                        |
+| character_set_connection | utf8mb4                        |
+| character_set_database   | utf8mb4                        |
+| character_set_filesystem | binary                         |
+| character_set_results    | utf8mb4                        |
+| character_set_server     | utf8mb4                        |
+| character_set_system     | utf8mb3                        |
+| character_sets_dir       | /usr/share/mysql-8.0/charsets/ |
++--------------------------+--------------------------------+
+
+
+
+
+
+
+保证在数据库开发中不乱码的规范：
+
+（1）数据表的字符集必须采用utf8,校验规则字符集采用默认的，即utf8_general_ci
+（2）连接字符串中必须指定连接字符集为utf8，指定连接字符集的连接字符串示例：
+	   Java:   jdbc:mysql://localhost:3306/mydbinstance?characterEncoding=utf-8
+	   C#:     server=localhost;uid=root;pwd=123456;database=test;charset=utf8
+
+说明：
+（1）这样做，数据库层面就不可能出现乱码了
+（2）精挑细选的字符集虽然能够提高访问MySQL的性能，但是在数据表存储有中文的环境下，对性能的提升微乎其微，同时也不划算了，
+         所以China大部分公司和业务都会直接设置成utf8，所以请您也直接遵守此规约。
+         除非您很好的理解MySQL的这3个参数character_set_client，character_set_connection，character_set_results，
+        才能灵活的设置字符集同时获得最佳的MySQL性能表现。
+		
+		
+		

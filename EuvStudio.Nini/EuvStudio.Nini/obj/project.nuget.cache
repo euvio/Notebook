@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4GhxIZZFgym+snixM630XjfNPbs8vDFZ3ghIwAVgiMf7jCF0ML391rZxoTp3UKJf14bdee2a10AroSCDq724Gw==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive\\Notebook\\EuvStudio.Nini\\EuvStudio.Nini\\EuvStudio.Nini.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\liliuwei\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\liliuwei\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://69.230.220.250:8081/repository/nuget-hosted/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
