@@ -1,5 +1,7 @@
 # C#
 
+### 默认值
+
 ```tex
 BaudRate : 9600
 BreakState : False
@@ -30,7 +32,98 @@ Site :
 Container :
 ```
 
-# 如何确认主机物理串口的COM号
+
+
+## SerialPort类的重要API说明
+
+### 获取主机上所有的可用串口名称
+
+```csharp
+public static string[] GetPortNames();
+```
+
+### 构造函数(设置串口参数)
+
+```csharp
+public SerialPort(string portName, int baudRate, Parity parity, int dataBits, StopBits stopBits)
+```
+
+### 打开串口
+
+```c#
+public bool IsOpen { get; }
+public void Open();
+```
+
+### 关闭串口
+
+```c#
+public void Close();
+public void Dispose()
+```
+
+### 发送数据
+
+```csharp
+public void Write(byte[] buffer, int offset, int count);
+public void Write(string text);
+public void Write(char[] buffer, int offset, int count);
+public void WriteLine(string text);
+```
+
+### 接收数据
+
+```csharp
+public int Read(byte[] buffer, int offset, int count);
+public string ReadExisting();
+public int Read(char[] buffer, int offset, int count);
+public int ReadByte();
+public int ReadChar();
+public string ReadLine();
+public string ReadTo(string value);
+```
+
+### 编码方式
+
+```csharp
+public Encoding Encoding { get; set; }
+```
+
+此属性，决定ReadExisting,ReadChar,Write(string text),Write(char[] buffer, int offset, int count)采用的编码方式。
+
+### 行结束符
+
+```c#
+public string NewLine { get; set; }
+```
+
+此属性决定ReadLine和WriteLine方法使用的换行符。
+
+### 超时设置
+
+```csharp
+public int ReadTimeout { get; set; }
+public int WriteTimeout { get; set; }
+```
+
+接收方调用Read方法读取接收缓存中的数据，若接收缓存中无数据且如果对方迟迟未响应发送数据，则Read方法在等待ReadTimeout毫秒后抛出异常。
+
+开启流控后，
+
+### 接收缓存和发送缓存大小
+
+```csharp
+public int ReadBufferSize;
+public int WriteBufferSize;
+```
+
+
+
+
+
+
+
+## 如何确认主机物理串口的COM号
 
 打开设备管理器，选择端口(COM和LPT)，假设看到下图，说明我们这台主机上有6个物理串口。
 
@@ -40,25 +133,37 @@ Container :
 
 可以通过短接某个物理串口的DB9的2(RX)和3(TX)（回环模式），然后再使用串口调试助手依次打开每个串口号，尝试发送消息并观察调试助手的收消息栏，若哪个串口号能够自发自收，则此时短接的物理串口就是此COM号。
 
-# 如何判断外设串口接口是否已损坏？
+# 如何判断外设串口接口已损坏？
 
-> 禁止带电插拔串口，很容易烧毁串口，请至少断电通信的一方再插拔。
+> 禁止带电插拔串口，这样很容易损坏串口。请至少关闭通信的其中一方电源后再插拔。
 
-短接2和3，通过串口调试助手打开此串口，若能自发自收，则串口正常。
+短接2和3，通过串口调试助手打开此串口，若能自发自收，则串口正常，否则已损坏。
 
-# 如何判断串口线是否损坏？
+# 如何判断串口连接线已损坏？
+
+万用表拨到通断挡位，测试连接线两端的DB9：
 
 2和2通，3和3通，2和3不通，5和5通，正常的直连线。
 
 2和3通，3和2通，2和2不通，3和3不通，5和5通，正常的交叉线。
 
-其他情况则串口线已损坏。
+其他情况串口线已损坏。
+
+**注意：公头和母头的2和3针脚顺序不同，公头左2是2，母头右2是2，不要测错针脚。**
 
 # 如何判断是直连线还是交叉线？
 
-万用表切换到通断挡位，红表笔接触串口线的一端DB9的2号针脚，黑表笔接触另外一端的2号针脚，如果蜂鸣器响，红灯亮，则表示2与2通，是直连线，否则是交叉线。
+> 2和2通，3和3通，2和3不通是直连；2和3通是交叉。
 
+万用表拨到通断挡位，红表笔接串口线一端DB9的2号针脚，黑表笔接触另外一端的2号针脚，如果蜂鸣器响，红灯亮，则表示2与2通，是直连线，否则是交叉线。
 
+当然，也可以使用3号引脚进行判断。
+
+`串口线分为公-公，母-母，公-母；使用万用表测试时，注意辨别公母头的2号针脚，别把表笔怼错位置了。公头自左至右第2个，母头自右至左第2个。`
+
+![image-20230506103811220](D:\OneDrive\Notebook\asserts\image-20230506103811220.png)
+
+`在判断串口线是直连还是交叉时，无需考虑DB9的第2针脚是RX还是TX，直接找第2个针脚就行了！`
 
 # 选择直连线还是交叉线？
 

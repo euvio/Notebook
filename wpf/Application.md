@@ -2,7 +2,7 @@
 
 使用Visual Studio创建一个WPF应用，生成的模板项目目录如下：
 
-![image-20230317163234029](D:\OneDrive\mdimg\image-20230317163234029.png)
+![image-20230317163234029](D:\OneDrive\Notebook\asserts\image-20230317163234029.png)
 
 > 模板自动生成两个类。第一个类是App（分布类），由App.xaml和App.xaml.cs共同组成。MainWindow是第二个类，作为启动后的默认主窗体。
 
@@ -81,7 +81,7 @@ public partial class App : Application
 }
 ```
 
-![image-20230317165418563](D:\OneDrive\mdimg\image-20230317165418563.png)
+![image-20230317165418563](D:\OneDrive\Notebook\asserts\image-20230317165418563.png)
 
 # Startup事件的常见作用
 

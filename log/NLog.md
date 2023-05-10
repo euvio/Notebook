@@ -97,10 +97,6 @@ nlog.config本质是xml文件，如果我们不小心配置错误，如xml语法
 </nlog>
 ```
 
-
-
-[NLog.config](D:\OneDrive\repository\asserts)
-
 # 缓冲区
 
 ```xml

@@ -1,5 +1,0 @@
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\DBUtility\bin\Debug\DBUtility.dll
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\DBUtility\bin\Debug\DBUtility.pdb
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\DBUtility\obj\Debug\DBUtility.dll
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\DBUtility\obj\Debug\DBUtility.pdb

@@ -1,5 +1,0 @@
-D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\Models\bin\Debug\Models.dll
-D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\Models\bin\Debug\Models.pdb
-D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
-D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\Models\obj\Debug\Models.dll
-D:\CsharpSolution\Demo\Csharp第四季\ProcedureDemo\Models\obj\Debug\Models.pdb

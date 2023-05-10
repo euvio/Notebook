@@ -1,5 +1,0 @@
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Common\bin\Debug\Common.dll
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Common\bin\Debug\Common.pdb
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Common\obj\Debug\Common.dll
-D:\CsharpSolution\Demo\Csharp第四季\ADONETDemo-Student\Common\obj\Debug\Common.pdb

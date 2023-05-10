@@ -1,3 +1,125 @@
+# 迭代器
+
+## IEnumerable\<out T>
+
+> 如果对象想作为数据源提供一系列元素供外界使用，那么该对象可以实现迭代器，调用者无需知晓数据源对象内部如何迭代，只需要通过foreach触发数据源对象吐出元素然后处理。
+
+继承`IEnumerator<out T>`的对象实现迭代规则，数据源对象自身继承`IEnumerable<out T>`返回迭代规则。
+
+**迭代偶数数据源对象**
+
+```csharp
+public class EvenNumbersGenerator : IEnumerable<int>
+{
+    private readonly int[] numbers;
+
+    public EvenNumbersGenerator()
+    {
+        numbers = new int[] { 2, 4, 8, 6, 3, 5 };
+    }
+
+    public IEnumerator<int> GetEnumerator()
+    {
+        return new EvenNumbersGeneratorEnumerator(this);
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
+    public class EvenNumbersGeneratorEnumerator : IEnumerator<int>
+    {
+        private readonly int[] numbers;
+        private int index = -1;
+
+        public EvenNumbersGeneratorEnumerator(EvenNumbersGenerator generator)
+        {
+            numbers = generator.numbers;
+        }
+
+        public int Current
+        {
+            get
+            {
+                return numbers[index];
+            }
+        }
+
+        object IEnumerator.Current => Current;
+
+        public void Dispose()
+        {
+            return;
+        }
+
+        public bool MoveNext()
+        {
+            if (index++ >= numbers.Length)
+            {
+                return false;
+            }
+
+            return Current % 2 == 0;
+        }
+
+        public void Reset()
+        {
+            index = -1;
+        }
+    }
+}
+```
+
+**调用方法**
+
+```csharp
+EvenNumbersGenerator ints = new EvenNumbersGenerator();
+/* 调用方法一 */
+IEnumerator<int> enumerator = ints.GetEnumerator();
+while (enumerator.MoveNext())
+{
+    Console.WriteLine(enumerator.Current);
+}
+/* 调用方法二 语法糖 */
+//foreach (var item in ints)
+//{
+//    Console.WriteLine(item);
+//}
+```
+
+## yield return
+
+```csharp
+IEnumerator<int> ProduceEvenNumbers()
+{
+    var numbers = new int[] { 2, 4, 8, 6, 3, 5 };
+    foreach (var number in numbers)
+    {
+        if(number % 2 == 0)
+        {
+            yield return number;
+        }
+        else
+        {
+            yield break;
+        }
+    }
+}
+```
+
+当一个方法返回IEnumerator\<out T> 时，理论上需要返回一个继承了IEnumerator\<out T>的对象，但是C#提供了yield语法糖，yield return 表示提供序列的下一个值，相当于Current；yield break 表示迭代结束，相当于MoveNext() == false。
+
+**yield关键字其实是一种语法糖，最终还是通过实现IEnumberable<T>、IEnumberable、IEnumberator<T>和IEnumberator接口实现的迭代功能**
+
+## 迭代器的优点
+
+迭代器是对象向外界提供一系列元素的手段，返回IEnumerable\<T>相比于返回List\<T>或Array\<T>有哪些优点呢？
+
+1. 调用者无需知晓数据源对象内部复杂的迭代吐出机制，只需要通过foreach拿到吐出的元素即可
+2. 数据源对象提供的是迭代方法，调用者执行迭代时才触发数据源对象`吐出`元素，而不是数据源对象把所有元素全部迭代到内存后供调用者使用，这样可以避免大内存分配，还可以让调用者根据某些条件提前结束迭代。
+3. 如果数据源对象`吐出`一个元素是耗时过程，那么调用者在迭代过程中可以提前处理先`吐出`的元素，而不是长时间等待数据源`吐出`所有元素再进行处理。
+
 # 值元组 ValueTuple
 
 ## 什么是ValueTuple?
