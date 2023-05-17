@@ -17,8 +17,11 @@ StartPoint与EndPoint构成一条直线，颜色沿着这条直线渐变。Offse
 </LinearGradientBrush>
 ```
 
-![渐变色.png](https://i.loli.net/2021/03/24/C7ZtnhrjWI51TBz.png)
+![C7ZtnhrjWI51TBz](D:\OneDrive\Notebook\asserts\C7ZtnhrjWI51TBz.png)
 
 ## 示例二
 
-![2021-03-24_004406.png](https://i.loli.net/2021/03/24/VqUw7TBnyv59sct.png)
+![VqUw7TBnyv59sct](D:\OneDrive\Notebook\asserts\VqUw7TBnyv59sct.png)
+
+# ImageBrush
+
